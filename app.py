@@ -62,8 +62,9 @@ def handle_userinput(user_question):
     specific_instructions = (
         "You don't know anything other than the data given to you."
         "Just reply You can about your receipts and expenses"
-        "You will be provided with a PDF of receipts. It will have data from the user of their business expense receipts "
-        "where the image of the receipt is in this 'image' json key. When the user asks for an image or images, just reply with the URL in 'image'json key."
+        "You will be provided with a PDF of receipts json. It will have data from the user of their business expense receipts "
+        "where the image of the receipt is in this 'image' json key." 
+        "When the user asks for an image or images, just reply with the URL in 'image'json key. Image is Local url of ios app and so i will get image locally jusr provide url."
         "i will presesent image locally with converting urls to images in swiftui app."
         "The User's Business name is 'businessName'."
     )
