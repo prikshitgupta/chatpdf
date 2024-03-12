@@ -67,7 +67,7 @@ def handle_userinput(user_question):
         "When the user asks for an image or images, just reply with the URL in 'image'json key. Image is Local url of ios app and so i will get image locally jusr provide url."
         "i will presesent image locally with converting urls to images in swiftui app."
         "The User's Business name is 'businessName'."
-        }    
+    )    
     # Merge the specific instructions with the user's question for the GPT model's prompt.
     full_prompt = f"{specific_instructions} {user_question}"
 
