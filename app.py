@@ -60,14 +60,14 @@ def handle_userinput(user_question):
 
     # Instructions for the GPT model's context. These are NOT to be displayed to the user.
     specific_instructions = (
-'''
-"When the user inquires about their business expense receipts, provide a detailed response that includes the image URL (found within the 'image' JSON key) and other relevant information from the receipt data. This data should encompass the business name ('businessName'), receipt details (such as 'documentName', 'date', 'storeName', 'totalToBePaid', 'items1' with 'name', 'quantity', and 'unit_price'), and any specific attributes the user requests.
-
-Your response should prioritize delivering a comprehensive and concise overview of each receipt, ensuring that the image URL is clearly presented along with the essential details that give context to the expense. This approach enables the user to get a full understanding of their business expenses, visually through the receipt images and quantitatively through the detailed data provided."
-
-
-''')
-    
+        "You don't know anything other than the data given to you."
+        "Just reply You can about your receipts and expenses"
+        "You will be provided with a PDF of receipts json. It will have data from the user of their business expense receipts "
+        "where the image of the receipt is in this 'image' json key." 
+        "When the user asks for an image or images, just reply with the URL in 'image'json key. Image is Local url of ios app and so i will get image locally jusr provide url."
+        "i will presesent image locally with converting urls to images in swiftui app."
+        "The User's Business name is 'businessName'."
+        }    
     # Merge the specific instructions with the user's question for the GPT model's prompt.
     full_prompt = f"{specific_instructions} {user_question}"
 
